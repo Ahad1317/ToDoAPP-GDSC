@@ -1,0 +1,107 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  width: 1000px;
+  height: 500px;
+  margin: 90px auto;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.App h1 {
+  text-align: center;
+}
+
+.form{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.form input[type="text"]{
+  padding: 10px;
+  width:75%;
+  border: 1px solid #000000;
+  border-radius: 6px;
+}
+
+.form input[type="text"]:focus,
+.form input[type="submit"]:focus{
+  outline: none;
+}
+
+.form button[type="submit"]{
+   width: 18%;
+  background-color: #008080;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.listItems{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.content{
+  width: 60%
+}
+
+.item button{
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 8px
+}
+
+.item button:focus{
+  outline:none
+}
+
+.updateItem{
+  background-color: goldenrod;
+  color:#fff;
+}
+
+.deleteItem{
+  background-color: red;
+  color:#fff;
+}
+
+.completeItem{
+  background-color: rgb(14, 75, 141);
+  color:#fff;
+}
+.updateForm{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.updateNewInput{
+  width: 80%;
+  border-radius: 6px;
+  border: 1px solid #eee;
+  padding: 8px;
+  outline: none;
+}
+.updateNewBtn{
+  background-color: purple;
+  color: #fff;
+  cursor: pointer;
+}
+
+
