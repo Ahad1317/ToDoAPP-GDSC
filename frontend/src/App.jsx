@@ -76,7 +76,7 @@ const renderUpdateForm = () => (
 
   return (
     <div className="App">
-      <h1>QUIZR...</h1>
+      <h1>ToDoAPP 🕒</h1>
      <form className="form" onSubmit={e => addItem(e)}>
       <input type = "text" placeholder = "Add Items..." onChange={e =>{setItemText(e.target.value)}} value={itemText}/>
       <button type="submit">ADD</button>
