@@ -40,6 +40,7 @@ function App() {
   const deleteItem = async (id) =>{
     try{
       const res = await axios.delete(`https://todoapp-i03b.onrender.com/api/item/${id}`)
+      console.log(res);
       const newListItems = listItems.filter(items => items._id!==id)
       setListItems(newListItems)
     }
@@ -56,6 +57,7 @@ function App() {
       console.log(res.data)
       const updateItemIndex = listItems.findIndex( item => item._id === isUpdating)
       const updatedItem = listItems[updateItemIndex].item = updateItemText
+      console.log(updatedItem);
       setUpdateItemText('')
       setIsUpdating('')
     }catch(err){
@@ -63,7 +65,7 @@ function App() {
     }
   }
 
-// before updating item we need to show input field where we will create our updated item 
+// before updating item, show input field where we create our updated item 
 const renderUpdateForm = () => (
   <form className="updateForm" onSubmit={(e)=>{updateItem(e)}} > 
   <input className="updateNewInput" type="text" placeholder="New Item" onChange={e=>{setUpdateItemText(e.target.value)}} value={updateItemText} />
